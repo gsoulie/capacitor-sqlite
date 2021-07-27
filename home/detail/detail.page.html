@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>User detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input autocapitalize="on" [(ngModel)]="user.name" placeholder="Name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input [(ngModel)]="user.email" type="email" placeholder="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Age</ion-label>
+    <ion-input [(ngModel)]="user.age" type="number" placeholder="age"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="saveUser()">Save user</ion-button>
+</ion-content>
