@@ -13,3 +13,13 @@ npx cap sync
 npx cap add android
 npx cap add ios
 ````
+
+## Initialization
+
+See ````app.module.ts```` and ````app.component.ts````
+
+## Configuration
+
+See : 
+````db-config.ts```` (https://github.com/gsoulie/capacitor-sqlite/blob/main/shared/core/config/db-config.ts)       
+````no-encryption-utils.ts```` (https://github.com/gsoulie/capacitor-sqlite/blob/main/shared/core/scripts/no-encryption-utils.ts)       
