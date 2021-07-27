@@ -1,9 +1,8 @@
 import { capSQLiteChanges, SQLiteDBConnection } from '@capacitor-community/sqlite';
 import { SQLiteService } from './sqlite/sqlite.service';
 import { Injectable } from '@angular/core';
-import { createSchema } from '../utils/no-encryption-utils';
-import { twoUsers } from './../utils/no-encryption-utils';
-import { dbConfig } from './sqlite/db-config';
+import { createSchema, twoUsers } from '../../core/scripts/no-encryption-utils';
+import { dbConfig } from '../../core/config/db-config';
 
 
 export class SqlRow {
