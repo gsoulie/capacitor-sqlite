@@ -1,6 +1,6 @@
 # capacitor-sqlite
 
-*using capacitor sqlite with ionic*
+Store data in local sqlite database *using capacitor sqlite with ionic*
 
 permission issue : https://github.com/capacitor-community/sqlite/issues/55      
 
