@@ -1,5 +1,5 @@
 import { BehaviorSubject } from 'rxjs';
-import { SqlLiteApiService } from './../shared/services/sqlite-api.service';
+import { UserApiService } from './../shared/services/user-api.service';
 import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { User } from '../shared/models/user.model';
 
@@ -16,7 +16,7 @@ export class HomePage implements AfterViewInit, OnDestroy, OnInit {
   userage = null;
   users$: BehaviorSubject<User[]> = new BehaviorSubject([]);
 
-  constructor(private sqliteApiWithHelper: SqlLiteApiService) { }
+  constructor(private sqliteApiWithHelper: UserApiService) { }
 
   ngOnInit() {
     this.users$ = this.sqliteApiWithHelper.users$;
