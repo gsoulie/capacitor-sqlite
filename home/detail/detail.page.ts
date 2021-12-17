@@ -1,4 +1,4 @@
-import { SqlLiteApiService } from './../../shared/services/sqlite-api.service';
+import { UserApiService } from './../../shared/services/user-api.service';
 import { AfterViewInit, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { User } from 'src/app/shared/models/user.model';
@@ -16,7 +16,7 @@ export class DetailPage implements OnInit, AfterViewInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private sqliteApiWithHelper: SqlLiteApiService,
+    private sqliteApiWithHelper: UserApiService,
     private loadingCtrl: LoadingController) { }
 
   async ngOnInit() {}
